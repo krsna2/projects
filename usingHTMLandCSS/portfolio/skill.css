@@ -1,0 +1,75 @@
+.skillsContainer{
+    position: relative;
+    display: flex;
+    padding: 7rem;
+    margin: 10px auto;
+    gap: 30px;
+
+}
+.skillLeft{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+
+}
+.skillRight{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    position: relative;
+    gap: 3rem;
+    justify-content: center;    
+}
+.skillFadeText{
+    user-select: none;
+    font-size: 8em;
+    color: rgb(231, 231, 231);
+    bottom: -7.5%;
+    right: -6%;
+    font-weight:550;
+    transition: all 3s;
+    position: absolute;
+}
+.skillHeading{
+    font-size: 50px;
+    font-style: bold;
+    line-height: 50px;
+    color: #e84949;
+}
+.caps{
+    font-size: 90px;
+}
+.skillSubHeading{
+    margin-top: 1rem;
+    text-align: justify;
+    width: 85%;
+
+}
+.skillSubHeading p{
+    margin: 15px 0;
+
+}
+.bolbStyle{
+    position: absolute ;
+    top: 30%;
+    left: 20%;
+    animation: bolb 6s cubic-bezier(0, 0, 0.56, 1) infinite;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+@keyframes bolb{
+    50%{
+        top: 25%;
+        left: 36%;
+        /* right: 40%; */
+    }
+}
+.skillLogo{
+    width: 70px;
+    transition: all 0.5s;
+    z-index: 1;
+    }
+.skillLogo:hover{
+    transform: scale(1.2);
+}

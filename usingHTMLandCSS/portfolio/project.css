@@ -1,0 +1,149 @@
+.project{
+    
+    /* width: 100%; */
+    margin-top: 4rem;
+    background-color: rgb(231, 231, 231);
+}
+.pageHeader{
+    color:#e84949;
+    font-size: 90px;
+    text-align: center;
+    padding-top:30px;
+
+}
+.projectContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+.projectCard{
+    width: 90%;
+    height: 550px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    box-shadow: 0px 0px 40px #1f1f1f;
+
+}
+.projectCard::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f1f9a;
+    transform: scale(1);
+    z-index: 0;
+
+}
+.projectCard::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg,#343d68,#343d68be,#343d687c);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.4s;
+    z-index: 1;
+}
+.projectCard:hover::before{
+    transform: scaleX(1);
+}
+.projectNumber{
+     position: absolute;
+     font-size: 150px;
+     font-weight: 550;
+     color: rgb(255, 255, 255);
+     z-index: 2;
+     /* display: none; */
+     opacity: 0;
+     transition: all 0.5s;
+}
+.projectNumberRight{
+    right: -40px;
+    top: -45px;
+}
+.projectNumberleft{
+    left: -40px;
+    top: -45px;
+}
+.projectCard:hover .projectNumber{
+    /* display: block; */
+    opacity: 1;
+}
+.projectContent{
+    position: absolute;
+    display: flex;
+    flex-direction: column; 
+    /* align-items: center; */
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    gap: 1em;
+    z-index: 1;
+    transition: all 0.4s;
+
+}
+.projectContentLeft{
+    left: 10%;
+}
+.projectContentRight{
+    right: 10%;
+}
+.projectCard:hover .projectContent{
+    transform: scale(1.05);
+}
+.projectSkills{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+.projectHeading{
+    font-size: 48px;
+    font-weight: 550;
+    line-height: 3rem;
+     
+}
+.projectSubHeading{
+    width: 70%;
+    font-size: 15px;
+    font-style: italic;
+
+}
+.btnGrp{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;  
+}
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 27px;
+    transition: all 0.4s;
+}
+.icon:hover{
+    color: #e84949;
+}
+#project1{
+    background-image: url(./images/project1.jpg);
+}
+#project2{
+    margin-left: 120px;
+    background-image: url(./images/project2.webp);
+}
+#project3{
+
+    background-image: url(./images/project3.webp);
+}
+#project4{
+    margin-left: 120px;
+    background-image: url(./images/project4.jpg);
+} 

@@ -1,0 +1,38 @@
+.footer{
+    position: relative;
+    margin-top: -1px;
+    padding: 5rem;
+    background-color: #343d68;      
+}
+.footerWrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footerFaded{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 5rem;
+    user-select: none;
+    color: #535c87;
+    }
+.linkWrapper{
+    display: flex;
+    gap: 1.2rem;
+}
+.linkWrapper a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+.linkWrapper a:hover{
+    color: #e84949;
+}
+.iconWrapper{
+    display: flex;
+    gap:1rem;
+}
